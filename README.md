@@ -195,11 +195,11 @@ The dataset comprises RGB and multispectral images of cherry trees, collected be
 
 | Name               | Role              |
 |:------------------|:-----------------|
-| **Siham Driham**   | Developer         |
-| **Adam Bessam**    | Developer         |
-| **Mohammed Daoudi**| Developer         |
-| **Walid Chouay**   | Developer         |
-| **Fahd Kalloubi**  | Project Supervisor|
+| **Siham DRIHAM**   | Developer         |
+| **Adam BESSAM**    | Developer         |
+| **Mohammed DAOUDI**| Developer         |
+| **Walid CHOUAY**   | Developer         |
+| **Fahd KALLOUBI**  | Project Supervisor|
 
 ---
 

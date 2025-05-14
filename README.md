@@ -65,16 +65,42 @@ Built with **Streamlit**, the platform allows users to:
 ## 📁 Repository Structure
 
 ```
-plantvision-ai/
-├── app.py                    # Main Streamlit app
-├── requirements.txt          # Project dependencies
+plateforme/
+│
+├── app.py                    # Point d'entrée de l'application
+├── style.css                 # Feuille de style principale
+├── .gitattributes            # Configuration Git
+│
 ├── assets/
-│   └── style.css              # Custom CSS styles
-├── components/                # Core modules (models, preprocessing, UI)
-├── config/                    # Configuration files
-├── models/                    # Pre-trained model weights (unimodal & multimodal)
-├── docs/                      # Project documentation
-└── ...
+│   └── style.css             # CSS complémentaire ou spécifique à certains éléments
+│
+├── components/               # Contient les modules de traitement et modèles
+│   ├── cnn_model.py
+│   ├── densenet_model.py
+│   ├── efficientnet_model.py
+│   ├── resnet_model.py
+│   ├── xception_model.py
+│   ├── prediction.py         # Fonctions de prédiction
+│   ├── preprocessing.py      # Prétraitement des données
+│   ├── ui.py                 # Interface utilisateur (peut-être pour Streamlit)
+│   └── __pycache__/          # Fichiers Python compilés (.pyc)
+│
+├── config/                   # Fichiers de configuration
+│   ├── settings.py
+│   └── __pycache__/
+│
+└── models/                   # Contient les modèles entraînés
+    ├── model_loader.py       # Chargement des modèles
+    ├── multimodal/           # Modèles traitant plusieurs sources d'entrée
+    │   ├── best_model.pth
+    │   ├── best_model_densenet.pth
+    │   ├── ...
+    ├── unimodal/             # Modèles traitant une seule source d'entrée
+    │   ├── best_custom_cnn_model.h5
+    │   ├── best_model_resnet.pth
+    │   ├── ...
+    └── __pycache__/
+
 ```
 
 ---
